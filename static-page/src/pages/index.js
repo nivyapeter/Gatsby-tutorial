@@ -11,6 +11,7 @@ export default function Home() {
     <h2>Design</h2>
     <h3>Develop & Deploy</h3>
     <p>Lorem ipsum dolor sit amet.</p>
+    
   </div>
   </Layout>
   </section>
