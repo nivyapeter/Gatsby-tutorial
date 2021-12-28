@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 
 export default function Home({data}) {
   console.log(data)
-  const {title,description}= data.site.siteMetadata
+  const projects = data.allMarkdownRemark.nodes
   return (
     <section>
     <Layout>
@@ -14,23 +14,31 @@ export default function Home({data}) {
     <h2>Design</h2>
     <h3>Develop & Deploy</h3>
     <p>Lorem ipsum dolor sit amet.</p>
-    <p>{title} - {description}</p>
+    <div>
+      {projects.map(project => (
+        <h2>{project.frontmatter.title}</h2>)
+      )}
+    </div>
+    
   </div>
   </Layout>
   </section>
   )
 }
-
+// export page query
 export const query = graphql`
-query SiteInfo {
-  site {
-    siteMetadata {
-      copyright
-      description
-      title
+query Projects1{
+  allMarkdownRemark {
+    nodes {
+      frontmatter {
+        title
+      }
+      id
     }
   }
 }
+
+
 
 
 `
