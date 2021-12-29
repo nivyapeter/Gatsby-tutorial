@@ -9,7 +9,7 @@ export default function Layout({children}) {
             <Navbar />
          <div className="content">
              {children}
-             <img src="/banner.png"  style={{maxWidth:'100%'}}/>
+             
          </div>
             <footer>
                 <p>Copyright 2021 web warrior</p>
