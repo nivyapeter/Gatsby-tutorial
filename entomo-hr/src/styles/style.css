@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:"AvenirNextLTW01-Medium", sans-serif; ;
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 100%;
+    margin:auto;
+    padding:13px 58px;
+    height:10vh;
+    max-width: 89%;
+    justify-content: space-between;
+
+}
