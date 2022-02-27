@@ -1,15 +1,19 @@
 import React,{ useState } from 'react';
 
 const App = () => {
+
+const [value,setValue] = useState(0);
+
+
 // const [name,setName] = useState("Debug media")
 // const [age,setAge] = useState("24")
 // const resetName = () => {
 //   setName(" ")
 // }
 
-const myFunction = () => {
-  alert("hai all welcome")
-}
+// const myFunction = () => {
+//   alert("hai all welcome")
+// }
 
 
   return (
@@ -22,8 +26,9 @@ const myFunction = () => {
       </div> */}
 
       <div>
-        <button onClick={myFunction}>Welcome</button>
-        <button onClick={myFunction}>Thank you</button>
+        <p>{value}</p>
+        <button onClick={() => setValue((value + 1 ))}>Increment Value</button>
+        <button onClick={() => setValue((value - 1 ))}>Decrement Value</button>
       </div>
 
 
