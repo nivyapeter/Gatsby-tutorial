@@ -20,13 +20,23 @@ import BlackLady from "../components/BlackLady"
 import blklady from "../images/blacklady.jpg"
 import blkladymob from "../images/blkladymob.png"
 import TotalEcnomic from "../components/TotalEcnomic"
+import bgImg from "../images/products_pre_footer.png"
+import LookingForInfo from "../components/LookingForInfo"
+import Ourproducts from "../components/Ourproducts"
+import perfomanceImg from "../images/perfomance.png"
+import insightsImg from "../images/insight.png"
+import carreersImg from "../images/carreers.png"
+import safetyImg from "../images/safety.png"
+import CheckItOut from "../components/CheckItOut"
+import teamImg from "../images/Team_back.png"
+import Banner from "../components/Banner"
 
 
 export default function IndexPage() {
   return (
     <Layout>
       <div className="font-sans">
-        <HomeBanner
+        {/* <HomeBanner
           bgImg={img}
           mobImg={mobimg}
           title="modern performance management
@@ -37,9 +47,22 @@ export default function IndexPage() {
           carrerLink="https://webuat.entomo.co/solutions/careers-tomorrow/"
           performimg={performimg}
           text="performance management"
+        /> */}
+        <Banner 
+        bgImg={img}
+        mobImg={mobimg}
+        title="modern performance management
+         software"
+         subtitle="built for the future of work"
+          perfomanceLink="https://webuat.entomo.co/solutions/everyday-performance/"
+          argumentLink="https://webuat.entomo.co/solutions/everyday-insights/"
+          carrerLink="https://webuat.entomo.co/solutions/careers-tomorrow/"
+          performimg={performimg}
+          text="performance management"
         />
       </div>
-      <div className="h-[100vh] md:h-[37vh] lg:h-[64vh] xl:h-[48vh] bg-[#0064bf] ">
+      
+      {/* <div className="h-[100vh] md:h-[37vh] lg:h-[64vh] xl:h-[48vh] bg-[#0064bf] ">
         <EnterpiseBlueBlk />
       </div>
       <div>
@@ -84,14 +107,41 @@ export default function IndexPage() {
           righttext="empower with nudges"
           downtext="enable personal growth"
         />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <TotalEcnomic 
         heading="The Total Economic Impact™ (TEI)
         of the entomo platform"
         text="by Forrester Research"
         />
-      </div>
+      </div> */}
+      {/* <div>
+        <LookingForInfo 
+        bgImg={bgImg}
+        heading = "looking for more information?"
+        sidetext="connect with our team to get an in-depth
+        understanding of all the features."
+        sidetexttwo="connect with our team to get an in-depth
+        understanding of all the features."
+        />
+      </div> */}
+      {/* <div>
+        <Ourproducts 
+        perfomanceImg={perfomanceImg}
+        insightsImg={insightsImg}
+        carreersImg={carreersImg}
+        safetyImg={safetyImg}
+        heading="our products"
+        linkText="know more "
+        />
+      </div> */}
+      {/* <div>
+        <CheckItOut 
+        bgImg={teamImg}
+        heading="for small teams working on game-changing innovations"
+        description="explore our pre-configured editions that are designed to help you accomplish targeted objectives."
+        />
+      </div> */}
     </Layout>
   )
 }

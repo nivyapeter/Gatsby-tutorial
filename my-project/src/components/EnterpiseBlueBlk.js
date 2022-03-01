@@ -8,6 +8,7 @@ import { GROWTH, INSIGHTS, PURPOSE } from "../constants"
 import HomeButton from "./HomeButton"
 import Modal from "./Modal"
 
+
 export default function EnterpiseBlueBlk() {
   const [openModal,setOpenModal] = useState(false);
   const showModal = () => {
