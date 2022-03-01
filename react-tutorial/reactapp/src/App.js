@@ -1,39 +1,23 @@
-import React,{ useState } from 'react';
+// import { cleanup } from "@testing-library/react";
+// import { cleanup } from "@testing-library/react";
+import React, { useState } from "react";
+import appStyle from "../src/styles/appStyle.css";
+import News from "./components/News";
+import Press from "./components/Press";
 
 const App = () => {
-
-const [value,setValue] = useState(0);
-
-
-// const [name,setName] = useState("Debug media")
-// const [age,setAge] = useState("24")
-// const resetName = () => {
-//   setName(" ")
-// }
-
-// const myFunction = () => {
-//   alert("hai all welcome")
-// }
-
-
+  const [showText, setShowText] = useState(false)
+  const [showTextTwo, setShowTextTwo] = useState(false)
   return (
     <div>
-      {/* <h2>Welcome{name}{age}</h2>
-      <div>
-      <button onClick={() => setAge("")}>Reset</button>
-        <button onClick={resetName}>Reset</button>
-        
-      </div> */}
-
-      <div>
-        <p>{value}</p>
-        <button onClick={() => setValue((value + 1 ))}>Increment Value</button>
-        <button onClick={() => setValue((value - 1 ))}>Decrement Value</button>
+      {showText ? <News /> : null}
+      {showTextTwo ? <Press /> : null}
+      <div className="btn_section" >
+        <button className="btn" onClick={() => setShowText(!showText)}>News</button>
+        <button className="btn" onClick={() => setShowTextTwo(!showTextTwo)} >Press</button>
       </div>
-
-
     </div>
   );
-}
+};
 
 export default App;
