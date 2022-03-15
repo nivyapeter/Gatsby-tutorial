@@ -48,3 +48,27 @@
     background: white;
     color: blue;
 }
+.btnOne {
+    border: 2px solid black;
+    border-radius: 8px;
+    background:green;
+    color:white;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+}
+/* .btnOne:hover {
+    background: yellow;
+    color:black;
+} */
+.btnTwo {
+    border: 2px solid black;
+    border-radius: 8px;
+    background:palevioletred;
+    color:white;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+}
+/* .btnTwo:hover {
+    background: yellow;
+    color:black;
+} */
