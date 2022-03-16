@@ -8,15 +8,18 @@ import Press from "./components/Press";
 const App = () => {
   const [showText, setShowText] = useState(false)
   const [showTextTwo, setShowTextTwo] = useState(false)
-  const [currentWindow,setCurrentWindow] = useState ();
+  const [currentWindow,setCurrentWindow] = useState ("News");
   const [style,setStyle] = useState("btnOne");
+  // const [style2,setStyle2] = useState("btnOne");
    const changeStyle =()=> {
      setStyle("btnTwo");
    }
+  //  const changeStyleNext =()=> {
+  //   setStyle2("btnThree");
+  // }
    const hadleClick =(e) => {
-    setCurrentWindow (<News />)
+    setCurrentWindow ( e.target.value)
    }
-
   return (
     <div>
       {showText ? <News /> : null}
@@ -26,8 +29,8 @@ const App = () => {
         <button className="btn" onClick={() => setShowTextTwo(!showTextTwo)} >Press</button>
       </div>
       <div className="btn_section">
-          <button className={style} onClick={changeStyle} {...hadleClick}>News</button>
-          <button className={style} onClick={changeStyle}>Press</button>
+          <button className="btnOne" value="News" onClick={hadleClick}>News</button>
+          <button className={style} value="press"onClick={changeStyle}>Press</button>
           </div>
     </div>
           

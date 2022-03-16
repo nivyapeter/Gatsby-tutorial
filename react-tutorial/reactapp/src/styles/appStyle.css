@@ -68,6 +68,14 @@
     padding: 2rem 4rem;
     font-size: 2rem;
 }
+.btnThree {
+    border: 2px solid black;
+    border-radius: 8px;
+    background:yellow;
+    color:white;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+}
 /* .btnTwo:hover {
     background: yellow;
     color:black;
