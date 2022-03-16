@@ -10,6 +10,7 @@ const App = () => {
   const [showTextTwo, setShowTextTwo] = useState(false)
   const [currentWindow,setCurrentWindow] = useState ("News");
   const [style,setStyle] = useState("btnOne");
+  
   const [style2,setStyle2] = useState(false);
    const changeStyle =()=> {
      setStyle("btnTwo");
@@ -17,6 +18,8 @@ const App = () => {
    const hadleClick =(e) => {
     setCurrentWindow ( e.target.value)
    }
+
+
   return (
     <div>
       {showText ? <News /> : null}
@@ -25,6 +28,9 @@ const App = () => {
         <button className="btn" onClick={() => setShowText(!showText)}>News</button>
         <button className="btn" onClick={() => setShowTextTwo(!showTextTwo)} >Press</button>
       </div>
+
+      {/* ############################################################################################## */}
+
       <div className="btn_section">
         <style>
           {`.style2 {
