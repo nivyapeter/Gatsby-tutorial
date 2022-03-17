@@ -80,3 +80,7 @@
     background: yellow;
     color:black;
 } */
+.card {
+    border: 1px solid transparent;
+    background-color: white;
+}
